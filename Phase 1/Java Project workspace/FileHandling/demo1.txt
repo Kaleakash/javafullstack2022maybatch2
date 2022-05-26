@@ -1,0 +1,2 @@
+WelcomeWelcome to Java Training
+Welcome again
