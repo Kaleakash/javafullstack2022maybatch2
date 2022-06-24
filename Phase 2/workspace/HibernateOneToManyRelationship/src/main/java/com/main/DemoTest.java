@@ -76,7 +76,8 @@ public class DemoTest {
 		
 		// Join with HQL or SQL 
 		TrainerService ts = new TrainerService();
-		List<Object[]> ll  = ts.findTrainerAndStudent();
+		//List<Object[]> ll  = ts.findTrainerAndStudent();
+		List<Object[]> ll  = ts.findTrainerAndStudentWithCondition("Raj");
 		Iterator<Object[]> ii = ll.iterator();
 		while(ii.hasNext()) {
 			Object obj[] = ii.next();
