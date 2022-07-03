@@ -3,6 +3,7 @@
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h2>Retrieve record using Scriplet</h2>
 <table border="1">
 	<tr>
 		<th>PId</th>
@@ -34,7 +36,22 @@ if(obj != null){
 	}
 }
 %>
-
+</table>
+<hr/>
+<h2>Product Details using JSTL</h2>
+<table border="1">
+	<tr>
+		<th>PId</th>
+		<th>PName</th>
+		<th>Price</th>
+	</tr>
+	<core:forEach items="${requestScope.obj}" var="p">
+		<tr>
+			<td> <core:out value="${p.pid}"></core:out> </td>
+			<td> <core:out value="${p.pname}"></core:out> </td>
+			<td> <core:out value="${p.price}"></core:out> </td>
+		</tr>
+	</core:forEach>
 </table>
 </body>
 </html>
