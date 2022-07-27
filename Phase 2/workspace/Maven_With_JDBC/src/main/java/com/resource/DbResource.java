@@ -13,7 +13,7 @@ public class DbResource {
 	
 	  static {									// this block load only once at begining 
 		  try {
-			  Class.forName(driverName);
+			    Class.forName(driverName);
 				con = DriverManager.getConnection(url, userName, password);
 		} catch (Exception e) {
 			System.out.println(e);

@@ -26,6 +26,7 @@ public class DemoTest {
 		AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(MyConfiguration.class);
 		Employee emp = (Employee)ac.getBean("employee");
 		System.out.println(emp);
+		
 		Product p1 = (Product)ac.getBean("pp");
 		System.out.println(p1);
 	}
