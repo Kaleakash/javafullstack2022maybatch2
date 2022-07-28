@@ -88,6 +88,11 @@ spring orm (spring with hibernate or jpa)
 	<property name="password" value="root@123"></property>
 </bean>
 
+JDBC Template 
+
+<bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate" scope="singleton">
+	<property name="dataSource" ref="ds"></property>
+</bean>
 
 web.xml for DispatcherServlet 
 
