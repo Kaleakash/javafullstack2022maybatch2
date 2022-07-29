@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Produt Management System</h2>
+<h2>Product Management System</h2>
 <a href="storeProduct.jsp">Store Product</a> | 
+<a href="retrieveAllProducts">View All Products</a> |
+<a href="deleteProduct.jsp">Delete Product</a> |
+<a href="updateProduct.jsp">Update Product</a>
 </body>
 </html>
