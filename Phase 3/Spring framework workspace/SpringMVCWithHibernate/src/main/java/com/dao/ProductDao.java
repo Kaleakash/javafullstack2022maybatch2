@@ -17,17 +17,17 @@ public class ProductDao {
 	@Autowired
 	SessionFactory sf;
 	
-	public int storeProduct(Product product) {
+	public String storeProduct(Product product) {
 		try {
 			Session session = sf.openSession();
 			Transaction tran = session.getTransaction();
 			tran.begin();
 				session.save(product);
 			tran.commit();
-			return 1;
+			return "Product Stored";
 		} catch (Exception e) {
 			System.out.println(e);
-			return 0;
+			return e.getMessage();
 		}
 	}
 	
