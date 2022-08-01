@@ -178,13 +178,24 @@ spring boot jpa starter
 </dependency>
 
 
+spring boot with jsp jasper 
+
+<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
+<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+    <version>9.0.38</version>
+</dependency>
+
 
 spring boot in jsp starter 
 
 <dependency>
     <groupId>org.apache.tomcat.embed</groupId>
     <artifactId>tomcat-embed-jasper</artifactId>
-   </dependency>
+	
+</dependency>
 
  <dependency>
     <groupId>org.springframework.boot</groupId>
