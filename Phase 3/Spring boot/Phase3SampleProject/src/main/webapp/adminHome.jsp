@@ -8,8 +8,10 @@
 </head>
 <body>
 ${requestScope.msg}
-
-
+<br/>
+<a href="storeProduct.jsp">Store Product</a> |
+<a href="displayAllProduct">View Product Details</a> |
+<a href="updateProduct.jsp">Update Product Details</a>
 <br/>
 <br/>
 <a href="index.jsp">Logout</a>
