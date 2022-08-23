@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/JavaScript">
+        var a=10;
+        var b= 20;
+        var sum = a+b;
+        document.write("Sum of two number is "+sum);
+        var x=10;           // number type consider 
+        var y="10";         // string type consider 
+        document.write("<br/> ==")
+        document.write("<br/>")
+        document.write(x==y);           //it will check only value not their data types. true 
+        document.write("<br/> ===") 
+        document.write("<br/>") 
+        document.write(a===b);      // it will check value as well as their data type . false 
+        var m;
+        document.write("<br/>Value of m is "+m);
+        document.write("<br/>data type of m is "+typeof(m));
+        m=10;
+        document.write("<br/>Value of m is "+m);
+        document.write("<br/>data type of m is "+typeof(m));  
+        m=10.1010;
+        document.write("<br/>Value of m is "+m);
+        document.write("<br/>data type of m is "+typeof(m));
+        m=true;
+        document.write("<br/>Value of m is "+m);
+        document.write("<br/>data type of m is "+typeof(m));
+        m="Hello";
+        document.write("<br/>Value of m is "+m);
+        document.write("<br/>data type of m is "+typeof(m));
+        m = new Date();
+        document.write("<br/>Value of m is "+m);
+        document.write("<br/>data type of m is "+typeof(m)); 
+        console.log("Data type of m is "+typeof(m));      
+    </script>
+</body>
+</html>

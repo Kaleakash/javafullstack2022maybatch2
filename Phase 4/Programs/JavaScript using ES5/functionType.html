@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function info() {
+            alert("This is normal user-defined function")
+        }
+        function add(a,b){
+            var sum = a+b;
+            alert("Sum of two number is "+sum);
+        }
+        function sayHello(name){
+            return "welcome user "+name;
+        }
+        function getNumber(){
+            return 100;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/JavaScript">
+        info();
+        add(100,200);
+        var result   =  sayHello("Ram");
+        alert("In main script "+result);
+        var numResult = getNumber();
+        alert("In Main script "+numResult);
+    </script>
+</body>
+</html>

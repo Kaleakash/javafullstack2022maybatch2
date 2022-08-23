@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function add() {
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            var sum = eval(num1)+eval(num2);
+            document.getElementById("result").value=sum;
+            document.getElementById("out").innerHTML=sum;
+            document.getElementById("n1").value="";
+            document.getElementById("n2").value="";
+        }
+        function sub() {
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            var sum = eval(num1)-eval(num2);
+            document.getElementById("result").value=sum;
+            document.getElementById("out").innerHTML=sum;
+            document.getElementById("n1").value="";
+            document.getElementById("n2").value="";
+        }
+        function changeValue() {
+           var h1TagValue = document.getElementsByTagName("h1")[0].innerHTML;
+            //alert(h1TagValue);
+            document.getElementsByTagName("h1")[1].innerHTML="Welcome to JavaScript Training";
+        }
+    </script>
+</head>
+<body>
+    <label>1st Number</label>
+    <input type="text" id="n1"/><br/>
+    <label>2nd Number</label>
+    <input type="text" id="n2"/><br/>
+    <label>Result</label>
+    <input type="text" id="result" readonly/><br/>
+    <label>Result</label>
+    <span id="out">
+
+    </span>
+    <br/>
+    <input type="button" value="Add" onclick="add()"/>
+    <input type="button" value="Sub" onclick="sub()"/>
+    <br/>
+    <hr/>
+    <h1>Welcome to JS Training</h1>
+    <h1>Welcome to </h1>
+    <input type="button" value="click here" onclick="changeValue()"/>
+</body>
+</html>
