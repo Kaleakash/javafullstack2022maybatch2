@@ -1,0 +1,10 @@
+<div>
+<h2>Attribute directive</h2>
+<p style="color:red">Change the color using inline style sheet</p>
+<p [ngStyle]="{'color':'red'}">Change color using ngStyle</p>
+<p class="firstClass">This is css class selector</p>
+<p [ngClass]={firstClass:true}>This is ngClass selector</p>
+<p [ngClass]={secondClass:true}>This is ngClass selector</p>
+<p [ngClass]={firstClass:true,secondClass:true}>This is ngClass selector</p>
+<p [ngClass]={firstClass:true,secondClass:false}>This is ngClass selector</p>
+</div>

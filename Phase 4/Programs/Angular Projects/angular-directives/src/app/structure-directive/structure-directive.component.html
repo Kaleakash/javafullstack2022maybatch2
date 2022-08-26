@@ -1,0 +1,56 @@
+<div>
+    <h2>Structure Directive</h2>
+    <h4>*ngIf</h4>
+    <p>Welcome to Angular</p>
+    <p *ngIf="true">Welcome to Angular using ngIf</p>
+    <p *ngIf="false">Welcome to Angular using ngIf</p>
+    <p *ngIf="f1">Welcome to Angular using ngIf with variable</p>
+    <p *ngIf="f2">Welcome to Angular using ngIf with variable</p>
+    <input type="button" value="click here" (click)="info()"><br/>
+    <div *ngIf="f3">
+        <h2>Welcome to ngIf</h2>
+        <p>We are learning ngIf</p>
+    </div>
+    <br/>
+    <input type="button" [value]="msg" (click)="toggle()"/><br/>
+    <div *ngIf="f4">
+        <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg"
+        width="200" height="200"/>
+    </div>
+    <br/>
+    <h2>*ngFor</h2>
+    {{names}}<br/>
+    <ol>
+        <li *ngFor="let name of names">{{name}}</li>
+    </ol>
+    <ul>
+        <li *ngFor="let name of names">{{name}}</li>
+    </ul>
+    <br/>
+    Emp Id :<input type="number" #idRef/><br>
+    Emp Name :<input type="text" #nameRef/><br>
+    Emp Age :<input type="number" #ageRef/><br>
+    <input type="button" value="Add Employee" (click)="addEmployee(idRef,nameRef,ageRef)"/>
+    <br/>
+    <h2>Employee details</h2>
+    <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr *ngFor="let emp of employees">
+                    <td>{{emp.id}}</td>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.age}}</td>
+            </tr>
+    </table>
+</div>
+
+
+
+
+
+
+
+
