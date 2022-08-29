@@ -1,0 +1,9 @@
+{
+    "products":[
+        {"pid":1,"pname":"Tv","price":55000},
+        {"pid":2,"pname":"Computer","price":42000},
+        {"pid":3,"pname":"Mobile","price":25000},
+        {"pid":4,"pname":"Laptop","price":86000},
+        {"pid":5,"pname":"Pen Drive","price":25000}
+    ]
+}
