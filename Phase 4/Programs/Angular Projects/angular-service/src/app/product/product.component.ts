@@ -16,7 +16,7 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
      this.ps.loadJsonData().subscribe((data:any)=>this.products=data.products,error=>console.log(error),()=>console.log("completed"))
 
-     //this.ps.loadJsonData().subscribe({next:(data:Product)=>this.products=data,(error:error:any)=>console.log(error),()=>console.log("completed")})
+     //this.ps.loadJsonData().subscribe({next:(data:any)=>this.products=data.products,error:(error:any)=>console.log(error),complete:()=>console.log("completed")});
   }
 
 }
