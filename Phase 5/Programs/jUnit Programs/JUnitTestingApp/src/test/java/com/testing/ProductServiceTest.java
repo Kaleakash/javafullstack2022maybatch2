@@ -1,4 +1,4 @@
-package com.service;
+package com.testing;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,6 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import com.bean.Product;
+import com.service.ProductService;
 
 class ProductServiceTest {
 
