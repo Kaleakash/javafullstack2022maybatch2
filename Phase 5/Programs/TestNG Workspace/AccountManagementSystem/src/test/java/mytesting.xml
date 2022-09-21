@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="MySimpleTestSuite">
+
+  <test name="Normal Testing">
+    <classes>
+      <class name="com.service.AccountServiceTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-20T17:38:28 IST" name="Default suite" finished-at="2022-09-20T17:38:28 IST" duration-ms="54">
+  <suite started-at="2022-09-21T14:22:28 IST" name="Default suite" finished-at="2022-09-21T14:22:28 IST" duration-ms="34">
     <groups>
     </groups>
-    <test started-at="2022-09-20T17:38:28 IST" name="Default test" finished-at="2022-09-20T17:38:28 IST" duration-ms="54">
+    <test started-at="2022-09-21T14:22:28 IST" name="Default test" finished-at="2022-09-21T14:22:28 IST" duration-ms="34">
       <class name="com.testing.OperationTest">
-        <test-method signature="f()[pri:0, instance:com.testing.OperationTest@236e3f4e]" started-at="2022-09-20T17:38:28 IST" name="f" finished-at="2022-09-20T17:38:28 IST" duration-ms="10" status="PASS">
+        <test-method signature="testDiv()[pri:0, instance:com.testing.OperationTest@87a85e1]" started-at="2022-09-21T14:22:28 IST" name="testDiv" finished-at="2022-09-21T14:22:28 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
+        </test-method> <!-- testDiv -->
+        <test-method signature="testSub()[pri:0, instance:com.testing.OperationTest@87a85e1]" started-at="2022-09-21T14:22:28 IST" name="testSub" finished-at="2022-09-21T14:22:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSub -->
       </class> <!-- com.testing.OperationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

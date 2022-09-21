@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+
+<groups>
+	<run>
+		<include name="loan"></include>
+	</run>
+</groups>
+
+  <test name="Test">
+    <classes>
+    <class name="com.testing.BikeTest"></class>
+    <class name="com.testing.CarTest"></class>
+    <!-- 
+      <class name="com.testing.BikeTest">
+      	<methods>
+      		<include name="mailageTest"></include>
+      	</methods>
+      </class>
+      <class name="com.testing.CarTest">
+      	<methods>
+      		<include name="speedTest"></include>
+      	</methods>
+      </class>  -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
