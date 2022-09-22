@@ -43,7 +43,6 @@ public class IndexPageTesting {
 	  WebElement thirdPTag  = listOfP.get(2);
 	  assertEquals(thirdPTag.getText(), "This is second p tag");
   } 
-  
   @AfterClass
   public void afterClass() {
 	  wd.close();
