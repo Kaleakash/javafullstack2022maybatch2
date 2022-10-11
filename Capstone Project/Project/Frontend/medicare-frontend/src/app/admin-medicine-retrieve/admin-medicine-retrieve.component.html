@@ -1,0 +1,26 @@
+<div>
+    <h2>All Medicine Details</h2>
+    <div *ngIf="flag">
+        Update Medicine Details
+        <form (ngSubmit)="updateMedicineInfo()">
+           <label>MId</label>
+           <input type="number" name="mid" [(ngModel)]="mid"/><br/>
+           <label>Price</label>
+           <input type="number" name="price" [(ngModel)]="price"/><br/>
+           <label>Quantity</label>
+           <input type="number" name="quantity" [(ngModel)]="quantity"/><br/>
+           <input type="submit" value="update medicine"/>
+           <input type="reset" value="reset"/>
+        </form>
+    </div>
+    <div>
+        <span *ngFor="let mm of medicines">
+            <img src={{mm.url}} width="300px" height="300px"/>
+            <span>{{mm.mname}} {{mm.price}}</span>
+            <input type="button" value="Delete" (click)="deleteMedicine(mm.mid)"/>
+            <input type="button" value="Update" (click)="updateMedicine(mm)"/>
+        </span>
+        
+    </div>
+    <a routerLink="/adminhome">Home</a>
+</div>

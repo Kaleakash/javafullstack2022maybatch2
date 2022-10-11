@@ -9,6 +9,8 @@ import { SignupComponent } from './signup/signup.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { UserdashboardComponent } from './userdashboard/userdashboard.component';
 import { MedicineAddComponent } from './medicine-add/medicine-add.component';
+import { AdminMedicineRetrieveComponent } from './admin-medicine-retrieve/admin-medicine-retrieve.component';
+import { UserMedicineRetrieveComponent } from './user-medicine-retrieve/user-medicine-retrieve.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { MedicineAddComponent } from './medicine-add/medicine-add.component';
     SignupComponent,
     AdmindashboardComponent,
     UserdashboardComponent,
-    MedicineAddComponent
+    MedicineAddComponent,
+    AdminMedicineRetrieveComponent,
+    UserMedicineRetrieveComponent
   ],
   imports: [
     BrowserModule,

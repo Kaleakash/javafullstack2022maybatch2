@@ -1,1 +1,19 @@
-<p>medicine-add works!</p>
+<div>
+    <h2>Add Medicine details</h2>
+    <form [formGroup]="medicineRef" (ngSubmit)="storeMedicineDetails()">
+        <label>Medicine Name</label>
+        <input type="text" formControlName="mname"/><br/>
+        <label>Medicine Price</label>
+        <input type="number" formControlName="price"/><br/>
+        <label>Medicine Quantity</label>
+        <input type="number" formControlName="quantity"/><br/>
+        <label>Medicine URL</label>
+        <input type="url" formControlName="url"/><br/>
+        <input type="submit" value="store medicine"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <br/>
+    <span style="color:red">{{msg}}</span>
+    <br/>
+    <a routerLink="/adminhome">Home</a>
+</div>
