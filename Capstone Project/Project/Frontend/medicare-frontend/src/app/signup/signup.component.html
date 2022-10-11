@@ -1,1 +1,18 @@
-<p>signup works!</p>
+<div>
+    <h2>Account Create</h2>
+    <form [formGroup]="loginRef" (ngSubmit)="signUp()">
+        <label>EmailId</label>
+        <input type="email" formControlName="emailid"/><br/>
+        <label>Password</label>
+        <input type="password" formControlName="password"/><br/>
+        <label>TypeOfUser</label>
+        <input type="radio" name="typeOfUser" value="admin" formControlName="typeOfUser"/>Admin
+        <input type="radio" name="typeOfUser" value ="user" formControlName="typeOfUser"/>User
+        <br/>
+        <input type="submit" value="SignUp"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <span style="color:red">{{errorMsg}}</span>
+    <br/>
+    <a routerLink="/login">Login</a>
+</div>

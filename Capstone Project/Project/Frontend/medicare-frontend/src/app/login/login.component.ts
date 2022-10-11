@@ -27,8 +27,10 @@ export class LoginComponent implements OnInit {
         next:(result:any)=> {
             //console.log(result);
             if(result=="Admin login successfully"){
-                this.router.navigate(["adminhome"]);
+              sessionStorage.setItem("userInfo",login.emailid);
+              this.router.navigate(["adminhome"]);
             }else if(result=="User login successfully"){
+              sessionStorage.setItem("userInfo",login.emailid);
               this.router.navigate(["userhome"]);
             }else {
                 this.errorMsg=result;
